@@ -4,6 +4,8 @@ const withFonts = require("next-fonts");
 
 module.exports = withCSS({
   env: {
-    API_URL: process.env.API_URL
+    API_URL: process.env.DEPLOY_URL
+     ? 'https://strapi-next-postgresql-blog.herokuapp.com'
+     : 'http://localhost:1337'
   }
 });
