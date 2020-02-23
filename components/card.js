@@ -9,7 +9,7 @@ const Card = ({ article }) => {
         <div className="uk-card uk-card-muted">
           <div className="uk-card-media-top">
             <img
-              src={process.env.API_URL + article.image.url}
+              src={process.env.DEPLOY_URL + article.image.url}
               alt={article.image.url}
               height="100"
             />
